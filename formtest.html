@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <div class="container">
+        <form id="register">
+            <h1>Register for this</h1>
+            <fieldset>
+                <div>
+                    <label>First Name
+                        <input id="given-name" type="text" placeholder="first name only" required autofocus>
+                    </label>
+                </div>
+                <div>
+                    <label>Last Name
+                        <input id="family-name" type="text" placeholder="Last name only" required autofocus>
+                    </label>
+                </div>
+                <div>
+                    <label>Date of birth
+                        <input id="dob" name="dob" type="date" required>
+                    </label>
+                 <div>
+                     <label>Email
+                         <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+                     </label>
+                  <div>
+                      <label>Telephone
+                          <input id="phone" name="phone" type="tel" placeholder="Eg. +44700 00000" required>
+                      </label>
+                  </div>
+                  <div>
+                      <label>Flying Skill level (1 low - 100 high)
+                          <input id="skill" name="skill" type="range" min="1" max="100" value="0"
+                          <output name="output" onforminput="value=a.value">0</output>
+                      </label>
+                  </div>
+                 </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h1>Billing Address</h1>
+                <div>
+                    <label>Address
+                        <textarea id="address" name="address" rows="5" required></textarea>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input id="postCode" name="postCode" list="country-names" type="text" required>
+                        <datalist id="country-names">
+                            <option label="England" value="England"></option>
+                            <option label="Northern Ireland" value="Northern Ireland"></option>
+                            <option label="Ireland" value="Ireland"></option>
+                            <option label="Scotland" value="Scotland"></option>
+                            <option label="Wales" value="Wales"></option>
+                        </datalist>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+        </div>
+    </body>
+</html>
