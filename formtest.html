@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
-    <head></head>
+    <head>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+        
+    </head>
     <body>
         <div class="container">
         <form id="register">
@@ -20,9 +23,10 @@
                     <label>Date of birth
                         <input id="dob" name="dob" type="date" required>
                     </label>
-                 <div>
+                 <div class="control-group error">
                      <label>Email
                          <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+                         <span class="help-block">this is a little bit of help</span>
                      </label>
                   <div>
                       <label>Telephone
